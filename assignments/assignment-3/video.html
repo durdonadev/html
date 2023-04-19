@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Video</title>
+    </head>
+    <body>
+        <video controls height="700" width="380" src="./my-video.mp4">
+            This video is not supported.
+        </video>
+
+        <video height="700" width="380" controls autoplay muted>
+            <source src="./my-video.mov" type="video/mov" />
+            <source src="./my-video.mp4" type="video/mp4" />
+            This video is not supported.
+        </video>
+
+        <video height="700" width="380" controls autoplay muted>
+            <source src="../my-video.mov" type="video/mov" />
+            <source src="../my-video.mp4" type="video/mp4" />
+            This video is not supported.
+        </video>
+    </body>
+</html>

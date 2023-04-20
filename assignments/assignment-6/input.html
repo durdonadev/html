@@ -6,5 +6,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Form</title>
     </head>
-    <body></body>
+    <body>
+        <form>
+            <h1>Fill the form to Make an Appoinment</h1>
+            <label for="first-name-input">First Name:</label>
+            <input
+                type="text"
+                id="first-name-input"
+                name="firstName"
+                placeholder="Your First Name"
+            />
+
+            <label for="last-name-input">Last Name:</label>
+            <input
+                type="text"
+                id="last-name-input"
+                name="lastName"
+                placeholder="Your Last Name"
+            />
+
+            <label for="birthday">Date of birth:</label>
+            <input type="date" id="date" name="birtday" />
+
+            <label for="appoinment-date">Date of Appoinment:</label>
+            <input type="date" id="appoinment-date" name="appoinment-date" />
+
+            <label for="time">Time of your visit:</label>
+            <input type="time" id="time" name="time" />
+        </form>
+
+        <form>
+            <h2>Test some input types</h2>
+            <label for="range">Range of your comment:</label>
+            <input type="range" id="range" name="range" />
+
+            <label for="week">Select any week:</label>
+            <input type="week" id="week" name="range" />
+
+            <label for="reset">Reset: </label>
+            <input type="reset" id="reset" name="reset" />
+        </form>
+    </body>
 </html>

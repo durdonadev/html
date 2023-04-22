@@ -18,6 +18,9 @@
                 placeholder="Full name"
                 id="fullNameInput"
                 name="fullName"
+                required
+                autofocus
+                value="Will Smith"
             />
             <label for="emailInput">Email</label>
             <input
@@ -25,6 +28,8 @@
                 placeholder="Email"
                 id="emailInput"
                 name="email"
+                required
+                value="will@example.com"
             />
             <label for="passwordInput">Password</label>
             <input
@@ -32,9 +37,40 @@
                 placeholder="Password"
                 id="passwordInput"
                 name="password"
+                required
             />
             <label for="checkboxInput">I promise everything is correct</label>
-            <input type="checkbox" id="checkboxInput" name="promise" />
+            <input type="checkbox" id="checkboxInput" name="promise" required />
+            <div>
+                <p>What is your gender?</p>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" />
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" />
+            </div>
+            <input type="reset" value="Reset Form Data" />
+            <label for="profileImage">Upload Your Image</label>
+            <input type="file" name="avatar" id="profileImage" />
+            <label for="telInput">Phone Number</label>
+            <input
+                type="tel"
+                id="telInput"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                name="phoneNumber"
+                required
+            />
+
+            <label for="dobInput">Date of Birth</label>
+            <input
+                type="date"
+                name="dob"
+                id="dobInput"
+                max="2007-01-01"
+                min="1983-01-01"
+            />
+            <label for="ageInput">Age</label>
+            <input type="number" id="ageInput" name="age" min="12" max="40" />
+
             <input type="submit" value="Sign up" />
         </form>
     </body>

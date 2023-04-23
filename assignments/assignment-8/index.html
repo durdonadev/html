@@ -9,60 +9,73 @@
     <body>
         <form>
             <h1>Photo Contest Entry</h1>
-            <label for="full-name-input">Full Name:</label><br />
-            <input
-                type="text"
-                id="full-name-input"
-                name="fullName"
-                placeholder="Your Full Name"
-                required
-            /><br />
+            <div>
+                <label for="fullNameInput">Full Name:</label><br />
+                <input
+                    type="text"
+                    id="fullNameInput"
+                    name="fullName"
+                    placeholder="Your Full Name"
+                    required
+                />
+            </div>
 
-            <label for="emailInput">Email</label><br />
-            <input
-                type="email"
-                placeholder="Email"
-                id="emailInput"
-                name="email"
-                required
-            /><br />
+            <div>
+                <label for="emailInput">Email</label><br />
+                <input
+                    type="email"
+                    placeholder="Email"
+                    id="emailInput"
+                    name="email"
+                    required
+                />
+            </div>
 
-            <label for="imageInput">Upload Your Photo:</label
-            ><input
-                type="file"
-                id="imageInput"
-                name="avatar"
-                required
-                accept="image/jpeg, image/jpg, image/webp"
-            /><br />
+            <div>
+                <label for="imageInput">Upload Your Photo:</label
+                ><input
+                    type="file"
+                    id="imageInput"
+                    name="avatar"
+                    required
+                    accept="image/jpeg, image/jpg, image/webp"
+                />
+            </div>
 
-            <label for="checkboxInput"
-                >I agree to the contest terms and conditions</label
-            >
-            <input
-                type="checkbox"
-                id="checkboxInput"
-                name="agree"
-                required
-            /><br />
+            <div>
+                <label for="contestCheckboxInput"
+                    >I agree to the contest terms and conditions</label
+                >
+                <input
+                    type="checkbox"
+                    id="contestCheckboxInput"
+                    name="agreement"
+                    required
+                />
+            </div>
 
-            <label for="countrySelect">Select Your Country</label>
-            <select name="country" id="countrySelect">
-                <option value="United States">United States</option>
-                <option value="Canada">Canada</option>
-                <option value="UK">UK</option>
-                <option value="Australia">Australia</option></select
-            ><br />
+            <div>
+                <label for="countrySelect">Select Your Country</label>
+                <select name="country" id="countrySelect">
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </div>
 
-            <label for="description"
-                >Write a brief description or story about your photo</label
-            ><br />
-            <textarea
-                name="description"
-                id="description"
-                cols="30"
-                rows="10"
-            ></textarea>
+            <div>
+                <label for="descriptionTextarea"
+                    >Write a brief description or story about your photo</label
+                ><br />
+                <textarea
+                    name="description"
+                    id="descriptionTextarea"
+                    cols="30"
+                    rows="10"
+                    required
+                ></textarea>
+            </div>
             <input type="submit" value="Submit My Photo" />
         </form>
     </body>

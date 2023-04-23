@@ -112,6 +112,51 @@
             <label for="vtInput">Free training time you recommend:</label>
             <input type="datetime-local" id="vtInput" name="visittime" /><br />
 
+            <h2>Membership Card informations</h2>
+            <label for="imageInput"
+                >Upload your image for your membership card:</label
+            >
+            <input type="file" id="imageInput" name="avatar" required /><br />
+
+            <label for="colorInput"
+                >Select color for your membership card:</label
+            >
+            <input type="color" id="colorInput" name="card-color" /><br />
+
+            <label for="searchInput">Search your trainer:</label>
+            <input type="search" id="searchInput" name="search" /><input
+                type="submit"
+                value="Search"
+            /><br />
+
+            <h2>Finish Sign Up</h2>
+            <label for="rangeInput">Rate our services:</label>
+            <input type="range" id="rangeInput" name="range" /><br />
+
+            <label for="urlInput">Search other sport-clubs websites:</label>
+            <input type="url" id="urlInput" name="url-search" />
+            <input type="button" value="Search" /><br />
+
+            <label for="checkboxInput"
+                >I have read and agree all Terms and Conditions</label
+            >
+            <input
+                type="checkbox"
+                id="checkboxInput"
+                name="agree"
+                required
+            /><br />
+
+            <label for="memberidInput"
+                >You will be sent the membership ID in your email address</label
+            >
+            <input
+                type="hidden"
+                id="memberidInput"
+                name="memberid"
+                value="764387"
+            />
+
             <input type="submit" value="Submit" />
         </form>
     </body>

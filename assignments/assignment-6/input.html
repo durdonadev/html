@@ -94,7 +94,8 @@
                 type="week"
                 id="startweekInput"
                 name="startweek"
-                min="18"
+                value="2023-W18"
+                min="2023-W18"
                 required
             /><br />
 
@@ -103,14 +104,20 @@
                 type="time"
                 id="starttimeInput"
                 name="startmonth"
-                min="9:00"
+                min="09:00"
                 max="22:00"
-                value="2023-05"
+                value="09:00"
                 required
             /><br />
 
             <label for="vtInput">Free training time you recommend:</label>
-            <input type="datetime-local" id="vtInput" name="visittime" /><br />
+            <input
+                type="datetime-local"
+                id="vtInput"
+                name="visittime"
+                value="2023-04-01T09:00"
+                min="2023-04-01T09:00"
+            /><br />
 
             <h2>Membership Card informations</h2>
             <label for="imageInput"
@@ -134,7 +141,14 @@
             <input type="range" id="rangeInput" name="range" /><br />
 
             <label for="urlInput">Search other sport-clubs websites:</label>
-            <input type="url" id="urlInput" name="url-search" />
+            <input
+                type="url"
+                id="urlInput"
+                name="url-search"
+                placeholder="https://example.com"
+                pattern="https://.*"
+                size="30"
+            />
             <input type="button" value="Search" /><br />
 
             <label for="checkboxInput"

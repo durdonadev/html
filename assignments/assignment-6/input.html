@@ -8,43 +8,47 @@
     </head>
     <body>
         <form>
-            <h1>Fill the form to Make an Appoinment</h1>
-            <label for="first-name-input">First Name:</label>
+            <h1>Sign up for Sports-Club Membership</h1>
+            <label for="first-name-input">First Name:</label><br />
             <input
                 type="text"
                 id="first-name-input"
                 name="firstName"
                 placeholder="Your First Name"
-            />
+                required
+            /><br />
 
-            <label for="last-name-input">Last Name:</label>
+            <label for="last-name-input">Last Name:</label><br />
             <input
                 type="text"
                 id="last-name-input"
                 name="lastName"
                 placeholder="Your Last Name"
-            />
+                required
+            /><br />
 
-            <label for="birthday">Date of birth:</label>
-            <input type="date" id="date" name="birtday" />
+            <label for="telInput">Phone Number:</label><br />
+            <input
+                type="tel"
+                id="telInput"
+                placeholder="123-456-7890"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                name="phoneNumber"
+                required
+            /><br />
 
-            <label for="appoinment-date">Date of Appoinment:</label>
-            <input type="date" id="appoinment-date" name="appoinment-date" />
+            <label for="passwordInput">Password:</label><br />
+            <input
+                type="password"
+                placeholder="Password"
+                id="passwordInput"
+                name="password"
+                required
+            /><br />
 
-            <label for="time">Time of your visit:</label>
-            <input type="time" id="time" name="time" />
-        </form>
+            <input type="reset" value="Reset" />
 
-        <form>
-            <h2>Test some input types</h2>
-            <label for="range">Range of your comment:</label>
-            <input type="range" id="range" name="range" />
-
-            <label for="week">Select any week:</label>
-            <input type="week" id="week" name="range" />
-
-            <label for="reset">Reset: </label>
-            <input type="reset" id="reset" name="reset" />
+            <input type="submit" value="Submit" />
         </form>
     </body>
 </html>

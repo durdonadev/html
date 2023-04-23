@@ -48,6 +48,70 @@
 
             <input type="reset" value="Reset" />
 
+            <h2>Additional informations</h2>
+            <label for="addressInput">Current address:</label>
+            <input
+                type="text"
+                placeholder="Your Address"
+                id="addressInput"
+                name="address"
+                required
+            />
+
+            <label for="zipInput">ZIP code:</label>
+            <input type="number" id="zipInput name="zipcode" placeholder="12345"
+            required /><br />
+
+            <label for="dobInput">Date of birth:</label>
+            <input
+                type="date"
+                id="dobInput"
+                name="dete-of-birth"
+                max="2006-01-01"
+                min="1963-01-01"
+                required
+            />
+            <div>
+                <p>What is your gender?</p>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" />
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" />
+            </div>
+
+            <label for="starmothtInput">Starting month of your training:</label>
+            <input
+                type="month"
+                id="startmonthInput"
+                name="startmonth"
+                min="2023-05"
+                value="2023-05"
+                required
+            /><br />
+
+            <label for="startweekInput">Starting week of your training:</label>
+            <input
+                type="week"
+                id="startweekInput"
+                name="startweek"
+                min="18"
+                required
+            /><br />
+
+            <label for="starttimetInput">Starting time of your training:</label>
+            <input
+                type="time"
+                id="starttimeInput"
+                name="startmonth"
+                min="9:00"
+                max="22:00"
+                value="2023-05"
+                required
+            /><br />
+
+            <label for="vtInput">Free training time you recommend:</label>
+            <input type="datetime-local" id="vtInput" name="visittime" /><br />
+
             <input type="submit" value="Submit" />
         </form>
     </body>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Application Form</title>
+    </head>
+    <body>
+        <div>
+            <h1>Application Form</h1>
+            <form>
+                <label for="fullNameInput">Full name</label>
+                <input
+                    type="text"
+                    placeholder="Full name"
+                    id="fullNameInput"
+                    name="fullName"
+                    required
+                    autofocus
+                />
+                <label for="emailInput">Email</label>
+                <input
+                    type="email"
+                    placeholder="Email"
+                    id="emailInput"
+                    name="email"
+                    required
+                />
+
+                <label for="cohortSelect">Select your cohort</label>
+                <select name="usersCohort" id="cohortSelect">
+                    <option value="Brooklyn">Brooklyn, NY</option>
+                    <option value="Chicago">Chicago, IL</option>
+                    <option value="Online">Online, Remote</option>
+                </select>
+                <label for="statement">Statement</label>
+                <textarea
+                    name="statement"
+                    id="statement"
+                    cols="30"
+                    rows="12"
+                ></textarea>
+                <input type="submit" value="Submit My Application" />
+            </form>
+        </div>
+    </body>
+</html>

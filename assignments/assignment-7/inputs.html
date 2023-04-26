@@ -77,6 +77,46 @@
                 <label for="femaleRadioInput">Female</label>
                 <input type="radio" id="femaleRadioInput" name="gender" />
             </div>
+
+            <h2>Account Details</h2>
+
+            <div>
+                <label for="userNameInput">Username:</label><br />
+                <input
+                    type="text"
+                    id="userNameInput"
+                    name="userName"
+                    placeholder="Your Username"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="passwordInput"
+                    >Password (Accepted only 8 characters):</label
+                ><br />
+                <input
+                    type="password"
+                    id="passwordInput"
+                    name="password"
+                    minlength="8"
+                    maxlength="8"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="secretMessageInput"
+                    >Press button to recieve Secret Message</label
+                >
+                <input
+                    type="hidden"
+                    id="secretMessageInput"
+                    name="secretMessage"
+                    value="764387"
+                />
+                <input type="button" value="Send Secret Message" />
+            </div>
         </form>
     </body>
 </html>

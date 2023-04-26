@@ -117,6 +117,130 @@
                 />
                 <input type="button" value="Send Secret Message" />
             </div>
+
+            <h2>Preferences</h2>
+            <h4>Favorite:</h4>
+            <div>
+                <label for="colorInput">Favorite Color:</label>
+                <input type="color" id="colorInput" name="color" />
+            </div>
+
+            <div>
+                <p>Choose your favorite(s):</p>
+                <input type="checkbox" id="nlCheckboxInput" name="newsletter" />
+                <label for="nlCheckboxInput">Newsletter</label>
+                <input
+                    type="checkbox"
+                    id="scCheckboxInput"
+                    name="Subscription"
+                />
+                <label for="scCheckboxInput">Subscription</label>
+            </div>
+
+            <div>
+                <label for="languageSelect">Preferred Language:</label>
+                <select name="language" id="languageSelect" required>
+                    <option value="English">English</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="French">French</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Uzbek">Uzbek</option>
+                </select>
+            </div>
+
+            <h4>Attachments:</h4>
+            <div>
+                <label for="profilePictureInput"
+                    >Choose Your Profile Picture:</label
+                >
+                <input
+                    type="file"
+                    id="profilePictureInput"
+                    name="picture"
+                    accept="image/jpg, image/webp, image/png"
+                    required
+                />
+            </div>
+
+            <h4>Location:</h4>
+            <div>
+                <label for="urlInput">Insert Website:</label>
+                <input
+                    type="url"
+                    id="urlInput"
+                    name="website"
+                    placeholder="https://example.com"
+                    pattern="https://.*"
+                    size="30"
+                    required
+                />
+            </div>
+
+            <h4>Feedback:</h4>
+            <div>
+                <label for="ratingInput">Satisfaction Rating:</label>
+                <input
+                    type="range"
+                    id="ratingInput"
+                    name="range"
+                    min="0"
+                    max="100"
+                    step="10"
+                    value="80"
+                />
+            </div>
+
+            <div>
+                <label for="commentTextarea">Your Comments:</label>
+                <textarea
+                    name="comment"
+                    id="commentTextarea"
+                    cols="30"
+                    rows="6"
+                ></textarea>
+            </div>
+
+            <h4>Schedule:</h4>
+            <div>
+                <label for="meetingTimeInput">Preferred Meeting Time</label>
+                <input
+                    type="time"
+                    id="meetingTimeInput"
+                    name="meetingTime"
+                    min="09:00"
+                    max="18:00"
+                    value="09:00"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="meetingDayInput">Preferred Meeting Day</label>
+                <input
+                    type="week"
+                    id="meetingDayInput"
+                    name="meetingDay"
+                    value="2023-W18"
+                    min="2023-W18"
+                    max="2023-W30"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="meetingMonthInput">Preferred Meeting Month</label>
+                <input
+                    type="month"
+                    id="meetingMonthInput"
+                    name="meetingMonth"
+                    min="2023-05"
+                    max="2023-07"
+                    value="2023-05"
+                    required
+                />
+            </div>
         </form>
     </body>
 </html>

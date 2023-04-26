@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment 7</title>
+        <style></style>
+    </head>
+    <body>
+        <form>
+            <h1>Multi-Purpose HTML Form</h1>
+            <h2>Personal Information</h2>
+            <div>
+                <label for="fullNameInput">Full Name:</label><br />
+                <input
+                    type="text"
+                    id="fullNameInput"
+                    name="fullName"
+                    placeholder="Your Full Name"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="emailInput">Email:</label><br />
+                <input
+                    type="email"
+                    id="emailInput"
+                    name="email"
+                    placeholder="Your Email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="telInput">Phone Number:</label><br />
+                <input
+                    type="tel"
+                    id="telInput"
+                    name="phoneNumber"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="123-456-7890"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="birthDateInput"
+                    >Date of Birth (Accepted age is over 16): </label
+                ><br />
+                <input
+                    type="date"
+                    id="birthDateInput"
+                    name="birthDate"
+                    max="2007-12-31"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="ageInput">Your Age:</label><br />
+                <input
+                    type="number"
+                    id="ageInput"
+                    name="age"
+                    min="16"
+                    required
+                />
+            </div>
+
+            <div>
+                <p>What is Your Gender:</p>
+                <label for="maleRadioInput">Male</label>
+                <input type="radio" id="maleRadioInput" name="gender" />
+                <label for="femaleRadioInput">Female</label>
+                <input type="radio" id="femaleRadioInput" name="gender" />
+            </div>
+        </form>
+    </body>
+</html>

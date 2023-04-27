@@ -4,8 +4,15 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Multi-Purpose HTML Form</title>
-        <style></style>
+        <title>Assignment 7</title>
+        <style>
+            h1 {
+                color: blueviolet;
+            }
+            h2 {
+                color: fuchsia;
+            }
+        </style>
     </head>
     <body>
         <form>
@@ -29,7 +36,7 @@
                     id="emailInput"
                     name="email"
                     placeholder="Your Email"
-                    pattern=".+@globex/.com"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
                     required
                 />
             </div>
@@ -66,17 +73,26 @@
                     id="ageInput"
                     name="age"
                     min="16"
-                    max="100"
                     required
                 />
             </div>
 
             <div>
                 <p>What is Your Gender:</p>
-                <label for="male">Male</label>
-                <input type="radio" id="male" name="gender" />
-                <label for="female">Female</label>
-                <input type="radio" id="female" name="gender" />
+                <label for="maleRadioInput">Male</label>
+                <input
+                    type="radio"
+                    id="maleRadioInput"
+                    name="gender"
+                    value="male"
+                />
+                <label for="femaleRadioInput">Female</label>
+                <input
+                    type="radio"
+                    id="femaleRadioInput"
+                    name="gender"
+                    value="female"
+                />
             </div>
 
             <h2>Account Details</h2>
@@ -94,7 +110,7 @@
 
             <div>
                 <label for="passwordInput"
-                    >Password (Accepted 8 characters):</label
+                    >Password (Accepted only 8 characters):</label
                 ><br />
                 <input
                     type="password"
@@ -194,12 +210,12 @@
             </div>
 
             <div>
-                <label for="comments">Your Comments:</label>
+                <label for="commentTextarea">Your Comments:</label>
                 <textarea
-                    name="comments"
-                    id="comments"
-                    cols="35"
-                    rows="10"
+                    name="comment"
+                    id="commentTextarea"
+                    cols="30"
+                    rows="6"
                 ></textarea>
             </div>
 
@@ -225,6 +241,7 @@
                     name="meetingDay"
                     value="2023-W18"
                     min="2023-W18"
+                    max="2023-W30"
                     required
                 />
             </div>
@@ -236,23 +253,21 @@
                     id="meetingMonthInput"
                     name="meetingMonth"
                     min="2023-05"
+                    max="2023-07"
                     value="2023-05"
                     required
                 />
             </div>
-
             <h4>Search:</h4>
             <div>
                 <label for="searchInput">Search for articles:</label>
-                <input type="search" id="searchInput" name="search" /><input
-                    type="button"
-                    value="Search"
-                />
+                <input type="search" id="searchInput" name="search" />
+                <input type="button" value="Search" />
             </div>
             <input type="submit" value="Submit" />
             <input type="reset" value="Reset" />
             <button>
-                Button <img src="./star.png" alt="" width="15" height="15" />
+                Button <img src="./star1.png" alt="" width="15" height="15" />
             </button>
             <input
                 type="image"

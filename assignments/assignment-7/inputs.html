@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment 7</title>
+        <style>
+            h1 {
+                color: blueviolet;
+            }
+            h2 {
+                color: fuchsia;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h1>Multi-Purpose HTML Form</h1>
+            <h2>Personal Information</h2>
+            <div>
+                <label for="fullNameInput">Full Name:</label><br />
+                <input
+                    type="text"
+                    id="fullNameInput"
+                    name="fullName"
+                    placeholder="Your Full Name"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="emailInput">Email:</label><br />
+                <input
+                    type="email"
+                    id="emailInput"
+                    name="email"
+                    placeholder="Your Email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="telInput">Phone Number:</label><br />
+                <input
+                    type="tel"
+                    id="telInput"
+                    name="phoneNumber"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="123-456-7890"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="birthDateInput"
+                    >Date of Birth (Accepted age is over 16): </label
+                ><br />
+                <input
+                    type="date"
+                    id="birthDateInput"
+                    name="birthDate"
+                    max="2007-12-31"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="ageInput">Your Age:</label><br />
+                <input
+                    type="number"
+                    id="ageInput"
+                    name="age"
+                    min="16"
+                    required
+                />
+            </div>
+
+            <div>
+                <p>What is Your Gender:</p>
+                <label for="maleRadioInput">Male</label>
+                <input
+                    type="radio"
+                    id="maleRadioInput"
+                    name="gender"
+                    value="male"
+                />
+                <label for="femaleRadioInput">Female</label>
+                <input
+                    type="radio"
+                    id="femaleRadioInput"
+                    name="gender"
+                    value="female"
+                />
+            </div>
+
+            <h2>Account Details</h2>
+
+            <div>
+                <label for="userNameInput">Username:</label><br />
+                <input
+                    type="text"
+                    id="userNameInput"
+                    name="userName"
+                    placeholder="Your Username"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="passwordInput"
+                    >Password (Accepted only 8 characters):</label
+                ><br />
+                <input
+                    type="password"
+                    id="passwordInput"
+                    name="password"
+                    minlength="8"
+                    maxlength="8"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="secretMessageInput"
+                    >Press button to recieve Secret Message</label
+                >
+                <input
+                    type="hidden"
+                    id="secretMessageInput"
+                    name="secretMessage"
+                    value="764387"
+                />
+                <input type="button" value="Send Secret Message" />
+            </div>
+
+            <h2>Preferences</h2>
+            <h4>Favorite:</h4>
+            <div>
+                <label for="colorInput">Favorite Color:</label>
+                <input type="color" id="colorInput" name="color" />
+            </div>
+
+            <div>
+                <p>Choose your favorite(s):</p>
+                <input type="checkbox" id="nlCheckboxInput" name="newsletter" />
+                <label for="nlCheckboxInput">Newsletter</label>
+                <input
+                    type="checkbox"
+                    id="scCheckboxInput"
+                    name="Subscription"
+                />
+                <label for="scCheckboxInput">Subscription</label>
+            </div>
+
+            <div>
+                <label for="languageSelect">Preferred Language:</label>
+                <select name="language" id="languageSelect" required>
+                    <option value="English">English</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="French">French</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Uzbek">Uzbek</option>
+                </select>
+            </div>
+
+            <h4>Attachments:</h4>
+            <div>
+                <label for="profilePictureInput"
+                    >Choose Your Profile Picture:</label
+                >
+                <input
+                    type="file"
+                    id="profilePictureInput"
+                    name="picture"
+                    accept="image/jpg, image/webp, image/png"
+                    required
+                />
+            </div>
+
+            <h4>Location:</h4>
+            <div>
+                <label for="urlInput">Insert Website:</label>
+                <input
+                    type="url"
+                    id="urlInput"
+                    name="website"
+                    placeholder="https://example.com"
+                    pattern="https://.*"
+                    size="30"
+                    required
+                />
+            </div>
+
+            <h4>Feedback:</h4>
+            <div>
+                <label for="ratingInput">Satisfaction Rating:</label>
+                <input
+                    type="range"
+                    id="ratingInput"
+                    name="range"
+                    min="0"
+                    max="100"
+                    step="10"
+                    value="80"
+                />
+            </div>
+
+            <div>
+                <label for="commentTextarea">Your Comments:</label>
+                <textarea
+                    name="comment"
+                    id="commentTextarea"
+                    cols="30"
+                    rows="6"
+                ></textarea>
+            </div>
+
+            <h4>Schedule:</h4>
+            <div>
+                <label for="meetingTimeInput">Preferred Meeting Time</label>
+                <input
+                    type="time"
+                    id="meetingTimeInput"
+                    name="meetingTime"
+                    min="09:00"
+                    max="18:00"
+                    value="09:00"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="meetingDayInput">Preferred Meeting Day</label>
+                <input
+                    type="week"
+                    id="meetingDayInput"
+                    name="meetingDay"
+                    value="2023-W18"
+                    min="2023-W18"
+                    max="2023-W30"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="meetingMonthInput">Preferred Meeting Month</label>
+                <input
+                    type="month"
+                    id="meetingMonthInput"
+                    name="meetingMonth"
+                    min="2023-05"
+                    max="2023-07"
+                    value="2023-05"
+                    required
+                />
+            </div>
+            <h4>Search:</h4>
+            <div>
+                <label for="searchInput">Search for articles:</label>
+                <input type="search" id="searchInput" name="search" />
+                <input type="button" value="Search" />
+            </div>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+            <button>
+                Button <img src="./star1.png" alt="" width="15" height="15" />
+            </button>
+            <input
+                type="image"
+                name="image"
+                src="../assignment-6/click.png"
+                width="20"
+                height="25"
+            />
+        </form>
+    </body>
+</html>

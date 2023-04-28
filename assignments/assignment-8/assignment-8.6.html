@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment 8.6</title>
+    </head>
+    <body>
+        <form>
+            <h1>Form For An Event RSVP</h1>
+            <div>
+                <label for="fullNameInput">Full Name:</label>
+                <input
+                    type="text"
+                    id="fullNameInput"
+                    name="fullName"
+                    placeholder="Your Full Name"
+                    required
+                    autofocus
+                />
+
+                <label for="emailInput">Email:</label>
+                <input
+                    type="email"
+                    id="emailInput"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                />
+            </div>
+            <hr />
+
+            <div>
+                <p>Attendance status:</p>
+                <label for="yesRadioInput">Yes</label>
+                <input
+                    type="radio"
+                    id="yesRadioInput"
+                    name="attendanceStatus"
+                    value="Yes"
+                    required
+                />
+                <label for="noRadioInput">No</label>
+                <input
+                    type="radio"
+                    id="noRadioInput"
+                    name="attendanceStatus"
+                    value="No"
+                />
+            </div>
+            <hr />
+
+            <div>
+                <label for="guestNumberInput"
+                    >Enter the number of guests you are bringing</label
+                >
+                <input
+                    type="number"
+                    id="guestNumberInput"
+                    name="guestNumber"
+                    min="0"
+                    max="20"
+                    required
+                />
+            </div>
+            <hr />
+
+            <div>
+                <label for="prefferedMealSelect">Meal Preference</label>
+                <select name="prefferedMeal" id="prefferedMealSelect">
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Non-Vegetarian">Non-Vegetarian</option>
+                    <option value="Vegan">Vegan</option>
+                    <option value="Gluten-Free">Gluten-Free</option>
+                </select>
+            </div>
+            <hr />
+
+            <div>
+                <label for="notesTextarea">Additional notes or requests:</label>
+                <textarea
+                    name="notes"
+                    id="notesTextarea"
+                    cols="30"
+                    rows="4"
+                ></textarea>
+            </div>
+            <hr />
+            <input type="submit" value="Submit the Event RSVP" />
+        </form>
+    </body>
+</html>

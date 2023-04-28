@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Option 5</title>
+    </head>
+    <body>
+        <form>
+            <h1>Support Ticket Submission</h1>
+            <div>
+                <label for="fullNameInput">Full Name:</label>
+                <input
+                    type="text"
+                    id="fullNameInput"
+                    name="fullName"
+                    placeholder="Your Full Name"
+                    required
+                    autofocus
+                />
+
+                <label for="emailInput">Email:</label>
+                <input
+                    type="email"
+                    id="emailInput"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                />
+            </div>
+            <hr />
+
+            <div>
+                <p>Select the priority of the issue:</p>
+                <input
+                    type="radio"
+                    id="lowRadioInput"
+                    name="issuePriority"
+                    value="Low"
+                    required
+                />
+                <label for="lowRadioInput">Low</label>
+
+                <input
+                    type="radio"
+                    id="mediumRadioInput"
+                    name="issuePriority"
+                    value="Medium"
+                />
+                <label for="mediumRadioInput">Medium</label>
+
+                <input
+                    type="radio"
+                    id="highRadioInput"
+                    name="issuePriority"
+                    value="High"
+                />
+                <label for="highRadioInput">High</label>
+            </div>
+            <hr />
+
+            <div>
+                <label for="issueCategorySelect"
+                    >Select the issue category</label
+                >
+                <select name="issueCategory" id="issueCategorySelect" required>
+                    <option value="Technical Issue">Technical Issue</option>
+                    <option value="Billing">Billing</option>
+                    <option value="Account Management">
+                        Account Management
+                    </option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <hr />
+
+            <div>
+                <label for="issueDetailTextarea"
+                    >Describe the issue in detail:</label
+                >
+                <textarea
+                    name="issueDetail"
+                    id="issueDetailTextarea"
+                    cols="30"
+                    rows="5"
+                    required
+                ></textarea>
+            </div>
+            <hr />
+
+            <div>
+                <label for="relevantScreenshotInput"
+                    >Upload relevant screenshots</label
+                >
+                <input
+                    type="file"
+                    id="relevantScreenshotInput"
+                    name="relevantScreenshot"
+                    accept="image/*"
+                    required
+                />
+            </div>
+            <hr />
+
+            <div>
+                <label for="additionalInformationTextarea"
+                    >Add any additional information or steps to reproduce the
+                    issue:</label
+                >
+                <textarea
+                    name="additionalInformation"
+                    id="additionalInformationTextarea"
+                    cols="30"
+                    rows="5"
+                ></textarea>
+            </div>
+            <hr />
+
+            <input type="submit" value="Submit the Support Ticket" />
+        </form>
+    </body>
+</html>

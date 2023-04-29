@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment 8.1</title>
+    </head>
+    <body>
+        <h1>Registering to a Newsletter</h1>
+        <form>
+            <div>
+                <label for="fullNameInput">Full Name:</label>
+                <input
+                    type="text"
+                    id="fullNameInput"
+                    name="fullName"
+                    placeholder="Your Full Name"
+                    required
+                    autofocus
+                />
+
+                <label for="ageInput">Age:</label>
+                <input
+                    type="number"
+                    id="ageInput"
+                    name="age"
+                    min="12"
+                    required
+                />
+
+                <label for="emailInput">Email:</label>
+                <input
+                    type="email"
+                    id="emailInput"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                />
+            </div>
+            <hr />
+
+            <div>
+                <p>Select your preferred topics:</p>
+                <input type="checkbox" id="sportCheckboxInput" name="sports" />
+                <label for="sportCheckboxInput">Sports</label>
+                <input
+                    type="checkbox"
+                    id="technologyCheckboxInput"
+                    name="technology"
+                />
+                <label for="technologyCheckboxInput">Technology</label>
+                <input type="checkbox" id="travelCheckboxInput" name="travel" />
+                <label for="travelCheckboxInput">Travel</label>
+            </div>
+            <hr />
+
+            <div>
+                <p>Frequency of the newsletter:</p>
+                <input
+                    type="radio"
+                    id="dailyRadioInput"
+                    name="frequency"
+                    value="Daily"
+                />
+                <label for="dailyRadioInput">Daily</label>
+
+                <input
+                    type="radio"
+                    id="weeklyRadioInput"
+                    name="frequency"
+                    value="Weekly"
+                />
+                <label for="weeklyRadioInput">Weekly</label>
+
+                <input
+                    type="radio"
+                    id="monthlyRadioInput"
+                    name="frequency"
+                    value="Monthly"
+                />
+                <label for="monthlyRadioInput">Monthly</label>
+            </div>
+            <hr />
+
+            <div>
+                <label for="emailFormatSelect"
+                    >Select your preferred email format</label
+                >
+                <select name="emailFormat" id="emailFormatSelect" required>
+                    <option value="HTML">HTML</option>
+                    <option value="Plain Text">Plain Text</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="commentTextarea"
+                    >Additional comments or suggestions</label
+                >
+                <textarea
+                    name="comment"
+                    id="commentTextarea"
+                    cols="30"
+                    rows="5"
+                ></textarea>
+            </div>
+            <hr />
+            <input type="submit" value="Submit the Form" />
+        </form>
+    </body>
+</html>

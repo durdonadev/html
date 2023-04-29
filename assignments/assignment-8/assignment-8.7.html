@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Photo Contest Entry</title>
+        <title>Assignment 8.7</title>
     </head>
     <body>
         <form>
@@ -17,6 +17,7 @@
                     name="fullName"
                     placeholder="Your Full Name"
                     required
+                    autofocus
                 />
             </div>
 
@@ -43,20 +44,20 @@
             </div>
 
             <div>
-                <label for="contestCheckboxInput"
+                <label for="agreementCheckboxInput"
                     >I agree to the contest terms and conditions</label
                 >
                 <input
                     type="checkbox"
-                    id="contestCheckboxInput"
+                    id="agreementCheckboxInput"
                     name="agreement"
                     required
                 />
             </div>
 
             <div>
-                <label for="countrySelect">Select Your Country</label>
-                <select name="country" id="countrySelect">
+                <label for="userCountrySelect">Select Your Country</label>
+                <select name="userCountry" id="userCountrySelect">
                     <option value="United States">United States</option>
                     <option value="Canada">Canada</option>
                     <option value="UK">UK</option>
@@ -65,12 +66,12 @@
             </div>
 
             <div>
-                <label for="descriptionTextarea"
+                <label for="photoDescriptionTextarea"
                     >Write a brief description or story about your photo</label
                 ><br />
                 <textarea
-                    name="description"
-                    id="descriptionTextarea"
+                    name="photoDescription"
+                    id="photoDescriptionTextarea"
                     cols="30"
                     rows="10"
                     required

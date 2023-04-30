@@ -57,25 +57,29 @@
             <div>
                 <p>Your favorite quiz categories:</p>
 
-                <label for="historyCheckboxInput">History</label>
+                <label for="historyQuizCategoryCheckbox">History</label>
                 <input
                     type="checkbox"
-                    id="historyCheckboxInput"
-                    name="history"
+                    id="historyQuizCategoryCheckbox"
+                    name="historyQuizCategor"
                 />
-                <label for="scienceCheckboxInput">Science</label>
+                <label for="scienceQuizCategoryCheckbox">Science</label>
                 <input
                     type="checkbox"
-                    id="scienceCheckboxInput"
-                    name="science"
+                    id="scienceQuizCategoryCheckbox"
+                    name="scienceQuizCategory"
                 />
-                <label for="sportsCheckboxInput">Sports</label>
-                <input type="checkbox" id="sportsCheckboxInput" name="sports" />
-                <label for="literatureCheckboxInput">Literature</label>
+                <label for="sportsQuizCategoryCheckbox">Sports</label>
                 <input
                     type="checkbox"
-                    id="literatureCheckboxInput"
-                    name="literature"
+                    id="sportsQuizCategoryCheckbox"
+                    name="sportsQuizCategory"
+                />
+                <label for="literatureQuizCategoryCheckbox">Literature</label>
+                <input
+                    type="checkbox"
+                    id="literatureQuizCategoryCheckbox"
+                    name="literatureQuizCategory"
                 />
             </div>
             <hr />
@@ -84,33 +88,33 @@
                 <p>Preferred quiz format:</p>
                 <input
                     type="radio"
-                    id="multipleChoiceRadioInput"
+                    id="multipleChoiceRadio"
                     name="quizFormat"
                     value="Multiple Choice"
                 />
-                <label for="multipleChoiceRadioInput">Multiple Choice</label>
+                <label for="multipleChoiceRadio">Multiple Choice</label>
 
                 <input
                     type="radio"
-                    id="trueFalseRadioInput"
+                    id="trueFalseRadio"
                     name="quizFormat"
                     value="True/False"
                 />
-                <label for="trueFalseRadioInput">True/False</label>
+                <label for="trueFalseRadio">True/False</label>
 
                 <input
                     type="radio"
-                    id="fillInBlankRadioInput"
+                    id="fillInBlankRadio"
                     name="quizFormat"
                     value="Fill in the Blank"
                 />
-                <label for="fillInBlankRadioInput">Fill in the Blank</label>
+                <label for="fillInBlankRadio">Fill in the Blank</label>
             </div>
             <hr />
 
             <div>
                 <label for="timeZoneSelect">Select your time zone:</label>
-                <select name="timeZone" id="timeZoneSelect" required>
+                <select name="usertimeZone" id="timeZoneSelect" required>
                     <option value="UTC-12">UTC-12</option>
                     <option value="UTC-11">UTC-11</option>
                     <option value="UTC-10">UTC-10</option>

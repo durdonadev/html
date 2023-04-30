@@ -10,7 +10,7 @@
         <form>
             <h1>Photo Contest Entry</h1>
             <div>
-                <label for="fullNameInput">Full Name:</label><br />
+                <label for="fullNameInput">Full Name:</label>
                 <input
                     type="text"
                     id="fullNameInput"
@@ -19,18 +19,17 @@
                     required
                     autofocus
                 />
-            </div>
 
-            <div>
-                <label for="emailInput">Email</label><br />
+                <label for="emailInput">Email</label>
                 <input
                     type="email"
-                    placeholder="Email"
+                    placeholder="Your Email"
                     id="emailInput"
                     name="email"
                     required
                 />
             </div>
+            <hr />
 
             <div>
                 <label for="photoInput">Upload Your Photo:</label
@@ -42,6 +41,7 @@
                     accept="image/jpeg, image/jpg, image/webp"
                 />
             </div>
+            <hr />
 
             <div>
                 <label for="agreementCheckbox"
@@ -54,6 +54,7 @@
                     required
                 />
             </div>
+            <hr />
 
             <div>
                 <label for="userCountrySelect">Select Your Country</label>
@@ -64,19 +65,21 @@
                     <option value="Australia">Australia</option>
                 </select>
             </div>
+            <hr />
 
             <div>
                 <label for="photoDescriptionTextarea"
                     >Write a brief description or story about your photo</label
-                ><br />
+                >
                 <textarea
                     name="photoDescription"
                     id="photoDescriptionTextarea"
                     cols="30"
-                    rows="10"
+                    rows="5"
                     required
                 ></textarea>
             </div>
+            <hr />
             <input type="submit" value="Submit My Photo" />
         </form>
     </body>

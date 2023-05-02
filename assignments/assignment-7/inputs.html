@@ -143,20 +143,24 @@
             </div>
 
             <div>
-                <p>Choose your favorite(s):</p>
-                <input type="checkbox" id="nlCheckboxInput" name="newsletter" />
-                <label for="nlCheckboxInput">Newsletter</label>
+                <p>Select if you prefer:</p>
                 <input
                     type="checkbox"
-                    id="scCheckboxInput"
-                    name="Subscription"
+                    id="newsletterSubscriptionCheckbox"
+                    name="newsletterSubscription"
                 />
-                <label for="scCheckboxInput">Subscription</label>
+                <label for="newsletterSubscriptionCheckbox"
+                    >Newsletter Subscription</label
+                >
             </div>
 
             <div>
-                <label for="languageSelect">Preferred Language:</label>
-                <select name="language" id="languageSelect" required>
+                <label for="preferredLanguageSelect">Preferred Language:</label>
+                <select
+                    name="preferredLanguage"
+                    id="preferredLanguageSelect"
+                    required
+                >
                     <option value="English">English</option>
                     <option value="Spanish">Spanish</option>
                     <option value="French">French</option>
@@ -175,7 +179,7 @@
                 <input
                     type="file"
                     id="profilePictureInput"
-                    name="picture"
+                    name="profilePicture"
                     accept="image/jpg, image/webp, image/png"
                     required
                 />
@@ -187,7 +191,7 @@
                 <input
                     type="url"
                     id="urlInput"
-                    name="website"
+                    name="url"
                     placeholder="https://example.com"
                     pattern="https://.*"
                     size="30"
@@ -197,11 +201,13 @@
 
             <h4>Feedback:</h4>
             <div>
-                <label for="ratingInput">Satisfaction Rating:</label>
+                <label for="satisfactionRatingInput"
+                    >Satisfaction Rating:</label
+                >
                 <input
                     type="range"
-                    id="ratingInput"
-                    name="range"
+                    id="satisfactionRatingInput"
+                    name="satisfactionRating"
                     min="0"
                     max="100"
                     step="10"
@@ -221,11 +227,13 @@
 
             <h4>Schedule:</h4>
             <div>
-                <label for="meetingTimeInput">Preferred Meeting Time</label>
+                <label for="preferredMeetingTimeInput"
+                    >Preferred Meeting Time</label
+                >
                 <input
                     type="time"
-                    id="meetingTimeInput"
-                    name="meetingTime"
+                    id="preferredMeetingTimeInput"
+                    name="preferredMeetingTime"
                     min="09:00"
                     max="18:00"
                     value="09:00"
@@ -234,11 +242,13 @@
             </div>
 
             <div>
-                <label for="meetingDayInput">Preferred Meeting Day</label>
+                <label for="preferredMeetingDayInput"
+                    >Preferred Meeting Day</label
+                >
                 <input
                     type="week"
-                    id="meetingDayInput"
-                    name="meetingDay"
+                    id="preferredMeetingDayInput"
+                    name="preferredMeetingDay"
                     value="2023-W18"
                     min="2023-W18"
                     max="2023-W30"
@@ -247,11 +257,13 @@
             </div>
 
             <div>
-                <label for="meetingMonthInput">Preferred Meeting Month</label>
+                <label for="preferredMeetingMonthInput"
+                    >Preferred Meeting Month</label
+                >
                 <input
                     type="month"
-                    id="meetingMonthInput"
-                    name="meetingMonth"
+                    id="preferredMeetingMonthInput"
+                    name="preferredMeetingMonth"
                     min="2023-05"
                     max="2023-07"
                     value="2023-05"
@@ -260,8 +272,12 @@
             </div>
             <h4>Search:</h4>
             <div>
-                <label for="searchInput">Search for articles:</label>
-                <input type="search" id="searchInput" name="search" />
+                <label for="articleSearchInput">Search for articles:</label>
+                <input
+                    type="search"
+                    id="articleSearchInput"
+                    name="articleSearch"
+                />
                 <input type="button" value="Search" />
             </div>
             <input type="submit" value="Submit" />

@@ -2,55 +2,76 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    max-width: 1440px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f6f6f6;
 }
 
 a {
     text-decoration: none;
+    font-size: 16px;
+    color: #61176e;
 }
 
-li {
-    color: #1d0327;
+.box {
+    width: 450px;
+    border-bottom: 25px solid #c628cb;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.header {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 55px;
-    color: #b244da;
-    background-color: #e3d2e6;
+.box h2 {
+    color: #fff;
+    background: #c628cb;
+    padding: 15px 20px;
+    font-size: 25px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.main-list {
-    list-style-position: inside;
-    background: #c064e1;
-    padding: 20px;
+.box ol {
+    position: relative;
+    background: #fff;
 }
 
-.nested-list {
-    list-style-position: inside;
-    background: #c064e1;
-    padding-left: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 5px;
+.box ol li {
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    background: #fff;
 }
 
-.main-list li {
-    background: #e3d2e6;
-    color: #1d0327;
-    padding: 5px;
-    margin-left: 35px;
+.box ol li:hover {
+    background: #d95ee4;
+    color: #fff;
 }
 
-.nested-list li {
-    background: #e3d2e6;
-    color: #444;
-    margin: 5px;
-    list-style-type: square;
+.box ol li a:hover {
+    color: #fff;
+}
+
+.box ol li span {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    background: #d95ee4;
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.box ol li:hover span {
+    background: #fff;
+    color: #d95ee4;
 }
